@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeito Filmes - Início</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Prefeito Filmes</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#" class="categoria" data-categoria="todos">Todos</a></li>
+                <li><a href="#" class="categoria" data-categoria="Ação">Ação</a></li>
+                <li><a href="#" class="categoria" data-categoria="Comédia">Comédia</a></li>
+                <li><a href="#" class="categoria" data-categoria="Drama">Drama</a></li>
+                <li><a href="#" class="categoria" data-categoria="Terror">Terror</a></li>
+                <li><a href="#" class="categoria" data-categoria="Ficção Científica">Ficção Científica</a></li>
+                <li><a href="#" class="categoria" data-categoria="Animação">Animação</a></li>
+            </ul>
+        </nav>
+        <div class="user-menu">
+            <span id="nomeUsuario"></span>
+            <button id="logout">Sair</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="destaque">
+            <h2>Em Destaque</h2>
+            <div id="filmeDestaque" class="filme-destaque"></div>
+        </section>
+
+        <section class="catalogo">
+            <h2>Catálogo</h2>
+            <div id="listaFilmes" class="grid-filmes"></div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.3.1/dist/pouchdb.min.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

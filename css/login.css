@@ -1,0 +1,70 @@
+/* css/login.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #141414;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.logo h1 {
+    color: #e50914;
+    font-size: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #f40612;
+}
+
+.mensagem-erro {
+    color: #e50914;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}

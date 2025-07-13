@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeito Filmes - Admin Filmes</title>
+    <link rel="stylesheet" href="css/admin-filmes.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Prefeito Filmes</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="admin-filmes.html">Filmes</a></li>
+                <li><a href="admin-usuarios.html">Usuários</a></li>
+                <li><a href="home.html">Voltar ao Site</a></li>
+            </ul>
+        </nav>
+        <div class="user-menu">
+            <span id="nomeUsuario"></span>
+            <button id="logout">Sair</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <h2>Adicionar/Editar Filme</h2>
+            <form id="filmeForm">
+                <input type="hidden" id="filmeId">
+                <div class="form-group">
+                    <label for="titulo">Título</label>
+                    <input type="text" id="titulo" required>
+                </div>
+                <div class="form-group">
+                    <label for="sinopse">Sinopse</label>
+                    <textarea id="sinopse" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="categoria">Categoria</label>
+                    <select id="categoria" required>
+                        <option value="">Selecione...</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="ano">Ano</label>
+                    <input type="number" id="ano" min="1900" max="2025">
+                </div>
+                <div class="form-group">
+                    <label for="trailer">Código do Trailer (YouTube)</label>
+                    <input type="text" id="trailer" placeholder="ID do vídeo do YouTube" required>
+                    <small class="hint">Exemplo: "https://youtu.be/dQw4w9WgXcQ"</small>
+                </div>
+                <div class="form-buttons">
+                    <button type="submit">Salvar</button>
+                    <button type="button" id="limpar">Limpar</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="lista">
+            <h2>Lista de Filmes</h2>
+            <div id="listaFilmes" class="grid-filmes"></div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.3.1/dist/pouchdb.min.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/admin-filmes.js"></script>
+</body>
+
+</html>

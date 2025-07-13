@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeito Filmes - Filme</title>
+    <link rel="stylesheet" href="css/filme.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Prefeito Filmes</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="home.html" class="categoria">Voltar</a></li>
+            </ul>
+        </nav>
+        <div class="user-menu">
+            <span id="nomeUsuario"></span>
+            <button id="logout">Sair</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="filmeDetalhes" class="filme-detalhes"></section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.3.1/dist/pouchdb.min.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/filme.js"></script>
+</body>
+
+</html>
